@@ -32,6 +32,7 @@ app.add_middleware(
 # API ROUTES
 
 @app.get("/")
+@app.head("/")
 def read_root():
 
     return FileResponse(
